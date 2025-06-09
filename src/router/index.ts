@@ -12,10 +12,6 @@ const router = createRouter({
       component: BancoReactivos,
       children: [
         {
-          path: '',
-          redirect: '/bancos', // Redirige al iniciar
-        },
-        {
           path: 'banco',
           name: 'banco',
           component: () => import('@/bancoReactivos/pages/BancoPage.vue'),
