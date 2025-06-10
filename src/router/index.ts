@@ -15,6 +15,13 @@ const router = createRouter({
           path: 'banco',
           name: 'banco',
           component: () => import('@/bancoReactivos/pages/BancoPage.vue'),
+          children: [
+            {
+              path: 'crear',
+              name: 'crear',
+              component: () => import('@/Banco/components/componentscards/CrearBanco.vue'),
+            },
+          ],
         },
         {
           path: 'compartidos',

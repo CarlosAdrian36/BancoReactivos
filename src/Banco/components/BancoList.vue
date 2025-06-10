@@ -9,6 +9,21 @@ import BancoCard from './BancoCard.vue';
     >
       <!--Bancos-->
       <BancoCard />
+      <BancoCard />
+      <BancoCard />
+      <BancoCard />
+      <BancoCard />
+      <BancoCard />
+      <BancoCard />
+      <BancoCard />
+      <BancoCard />
+      <BancoCard />
+      <BancoCard />
+      <BancoCard />
+      <BancoCard />
+      <BancoCard />
+      <BancoCard />
+      <BancoCard />
     </div>
   </section>
 </template>
