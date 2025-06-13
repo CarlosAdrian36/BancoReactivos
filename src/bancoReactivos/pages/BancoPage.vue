@@ -9,9 +9,9 @@ import BancoList from '@/Banco/components/BancoList.vue';
 
   <router-link
     to="/banco/crear"
-    class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition shadow inline-block"
+    class="border border-blue-600 text-blue-600 bg-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition shadow inline-block"
   >
-    ➕ Crear Banco
+    Crear Banco
   </router-link>
 
   <RouterView />
