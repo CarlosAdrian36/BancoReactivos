@@ -50,6 +50,10 @@ const router = createRouter({
           name: 'eliminar',
           component: () => import('@/bancoReactivos/pages/EliminadosPage.vue'),
         },
+        // {
+        //   path: '',
+        //   redirect: '/banco',
+        // },
       ],
     },
   ],
