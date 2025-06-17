@@ -15,20 +15,22 @@ function volverALaLista() {
     <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Lista de Bancos</h1>
   </div>
 
-  <router-link
-    v-if="$route.name != 'crear'"
-    to="/banco/crear"
-    class="border border-blue-600 text-blue-600 bg-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition shadow inline-block"
-  >
-    Crear Banco
-  </router-link>
-  <button
-    v-else
-    @click="volverALaLista"
-    class="border border-gray-600 text-gray-600 bg-white px-4 py-2 rounded-lg hover:bg-gray-600 hover:text-white transition shadow inline-block"
-  >
-    ← Volver a la lista
-  </button>
+  <div class="p-5">
+    <router-link
+      v-if="$route.name != 'crear'"
+      to="/banco/crear"
+      class="border border-blue-600 text-blue-600 bg-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition shadow inline-block"
+    >
+      Crear Banco
+    </router-link>
+    <button
+      v-else
+      @click="volverALaLista"
+      class="border border-gray-600 text-gray-600 bg-white px-4 py-2 rounded-lg hover:bg-gray-600 hover:text-white transition shadow inline-block"
+    >
+      ← Volver a la lista
+    </button>
+  </div>
 
   <RouterView v-slot="{ Component }">
     <transition name="fade" mode="out-in">

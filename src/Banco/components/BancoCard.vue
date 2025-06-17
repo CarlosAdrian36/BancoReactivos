@@ -16,7 +16,7 @@
             class="text-gray-500 hover:text-red-600 transition cursor-pointer"
             title="Eliminar"
           >
-            <i class="fas fa-trash"></i>
+            <i class="fa-regular fa-xmark"></i>
           </button>
 
           <!-- Editar -->
@@ -24,7 +24,7 @@
             class="text-gray-500 hover:text-yellow-400 transition cursor-pointer"
             title="Editar"
           >
-            <i class="fas fa-pen"></i>
+            <i class="fa-regular fa-pencil"></i>
           </button>
 
           <!-- Copiar -->
@@ -32,7 +32,7 @@
             class="text-gray-500 hover:text-blue-600 transition cursor-pointer"
             title="Copiar"
           >
-            <i class="fas fa-copy"></i>
+            <i class="fa-regular fa-copy"></i>
           </button>
 
           <!-- Compartir -->
@@ -40,7 +40,7 @@
             class="text-gray-500 hover:text-green-600 transition cursor-pointer"
             title="Compartir"
           >
-            <i class="fas fa-share-alt"></i>
+            <i class="fa-regular fa-share"></i>
           </button>
         </div>
       </div>
