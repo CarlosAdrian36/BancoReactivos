@@ -40,7 +40,7 @@ const router = createRouter({
             },
             {
               path: '',
-              name: 'default',
+              name: 'defaultcompartido',
               redirect: '/compartidos/compartido', // Opción por defecto
             },
           ],
