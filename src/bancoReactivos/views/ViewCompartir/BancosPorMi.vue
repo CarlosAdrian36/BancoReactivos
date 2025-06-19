@@ -1,3 +1,14 @@
+<script setup lang="ts">
+import BancoCard from '@/Banco/components/BancoCard.vue';
+</script>
+
 <template>
-  <div>Este es el Por Mi</div>
+  <section class="py-10 bg-gray-100">
+    <div
+      class="mx-auto grid max-w-6xl grid-cols-1 gap-6 p-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1"
+    >
+      <!--Bancos-->
+      <BancoCard />
+    </div>
+  </section>
 </template>

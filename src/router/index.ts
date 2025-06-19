@@ -19,7 +19,7 @@ const router = createRouter({
             {
               path: 'crear',
               name: 'crear',
-              component: () => import('@/Banco/components/componentscards/CrearBanco.vue'),
+              component: () => import('@/bancoReactivos/views/Crear/CrearBanco.vue'),
             },
           ],
         },
