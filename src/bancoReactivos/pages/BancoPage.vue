@@ -11,7 +11,7 @@ function volverALaLista() {
 </script>
 
 <template>
-  <div class="pt-19"></div>
+  <div class="pt-18"></div>
   <div class="flex justify-end pr-6 pt-6">
     <router-link
       v-if="$route.name != 'crear'"

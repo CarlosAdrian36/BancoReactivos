@@ -5,7 +5,7 @@ const route = useRoute();
 </script>
 
 <template>
-  <div class="pt-32 max-w-4xl mx-auto">
+  <div class="pt-26 mx-auto">
     <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Bancos Compartidos</h1>
 
     <!-- Tabs -->
