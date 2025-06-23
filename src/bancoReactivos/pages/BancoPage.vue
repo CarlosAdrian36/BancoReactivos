@@ -11,8 +11,11 @@ function volverALaLista() {
 </script>
 
 <template>
-  <div class="pt-18"></div>
-  <div class="flex justify-end pr-6 pt-6">
+  <div class="pt-26 max-w-4xl mx-auto">
+    <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Lista de Bancos</h1>
+  </div>
+  <!-- <div class="pt-18"></div> -->
+  <div class="flex justify-end pr-6 z-10">
     <router-link
       v-if="$route.name != 'crear'"
       to="/banco/crear"
@@ -29,10 +32,6 @@ function volverALaLista() {
     </button>
   </div>
 
-  <div class="pt-5 max-w-4xl mx-auto">
-    <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Lista de Bancos</h1>
-  </div>
-
   <RouterView v-slot="{ Component }">
     <transition name="fade" mode="out-in">
       <component :is="Component" v-if="$route.name === 'crear'" />
@@ -40,7 +39,6 @@ function volverALaLista() {
         <div
           class="mx-auto grid max-w-6xl grid-cols-1 gap-6 p-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1"
         >
-          <!--Bancos-->
           <BancoCard />
         </div>
       </section>
