@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import BancoCard from '@/Banco/components/BancoCard.vue';
+// import BancoCard from '@/Banco/components/BancoCard.vue';
+import { fetchBancos } from '@/api/mock/mockBancoAPI';
+import BancoList from '@/Banco/components/BancoList.vue';
+import { useQuery } from '@tanstack/vue-query';
 import { useRouter } from 'vue-router';
 // const route = useRoute();
 const router = useRouter();
@@ -8,6 +11,15 @@ const router = useRouter();
 function volverALaLista() {
   router.push('/banco');
 }
+
+const {
+  data: bancos = [],
+  // isLoading,
+  // isError,
+} = useQuery({
+  queryKey: ['bancos'],
+  queryFn: fetchBancos,
+});
 </script>
 
 <template>
@@ -39,7 +51,7 @@ function volverALaLista() {
         <div
           class="mx-auto grid max-w-6xl grid-cols-1 gap-6 p-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1"
         >
-          <BancoCard />
+          <BancoList :bancos="bancos ?? []" />
         </div>
       </section>
     </transition>

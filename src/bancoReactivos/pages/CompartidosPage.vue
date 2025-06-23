@@ -1,15 +1,14 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router';
+// import { useRoute } from 'vue-router';
 
-const route = useRoute();
+// const route = useRoute();
 </script>
 
 <template>
-  <div class="pt-23 max-w-4xl mx-auto">
+  <!-- <div class="pt-23 max-w-4xl mx-auto">
     <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Bancos Compartidos</h1>
   </div>
 
-  <!-- Tabs -->
   <div class="flex justify-center border-b border-gray-300 mb-4">
     <RouterLink
       to="/compartidos/compartido"
@@ -36,6 +35,6 @@ const route = useRoute();
     </RouterLink>
   </div>
 
-  <!-- Aquí se mostrará el contenido de cada tab -->
-  <RouterView />
+  <RouterView /> -->
+  <div></div>
 </template>

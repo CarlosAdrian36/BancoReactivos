@@ -6,8 +6,7 @@
       <!-- Barra superior con botones -->
       <div class="flex justify-between items-center px-5 pt-4">
         <h2 class="text-xl font-semibold text-gray-900 truncate max-w-[80%]">
-          Matemáticas I
-          zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+          {{ banco.titulo }}
         </h2>
 
         <div class="flex gap-3">
@@ -48,9 +47,17 @@
       <!-- Contenido -->
       <div class="px-5 pb-5 pt-2">
         <p class="text-sm text-gray-600">
-          Esta es una descripción secundaria del contenido, mostrando más detalles o contexto.
+          {{ banco.descripcion }}
         </p>
       </div>
     </div>
   </div>
 </template>
+<script setup lang="ts">
+import type { BancoReactivo } from '../interface/banco.interface';
+
+interface Props {
+  banco: BancoReactivo;
+}
+defineProps<Props>();
+</script>
