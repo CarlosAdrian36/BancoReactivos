@@ -23,25 +23,27 @@ const {
 </script>
 
 <template>
-  <div class="pt-26 max-w-4xl mx-auto">
-    <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Lista de Bancos</h1>
-  </div>
-  <!-- <div class="pt-18"></div> -->
-  <div class="flex justify-end pr-6 z-10">
-    <router-link
-      v-if="$route.name != 'crear'"
-      to="/banco/crear"
-      class="border border-blue-600 text-blue-600 bg-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition shadow inline-block"
-    >
-      Crear Banco
-    </router-link>
-    <button
-      v-else
-      @click="volverALaLista"
-      class="border border-gray-600 text-gray-600 bg-white px-4 py-2 rounded-lg hover:bg-gray-600 hover:text-white transition shadow inline-block"
-    >
-      ← Volver a la lista
-    </button>
+  <div class="pt-26 max-w-4xl mx-auto flex items-center justify-between">
+    <!-- Título ocupa todo el espacio disponible -->
+    <h1 class="flex-1 text-2xl font-bold text-center text-gray-800 mb-6">Lista de Bancos</h1>
+
+    <!-- Botón pegado a la derecha -->
+    <div class="pr-6">
+      <router-link
+        v-if="$route.name !== 'crear'"
+        to="/banco/crear"
+        class="border border-blue-600 text-blue-600 bg-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition shadow inline-block"
+      >
+        Crear Banco
+      </router-link>
+      <button
+        v-else
+        @click="volverALaLista"
+        class="border border-gray-600 text-gray-600 bg-white px-4 py-2 rounded-lg hover:bg-gray-600 hover:text-white transition shadow inline-block"
+      >
+        ← Volver a la lista
+      </button>
+    </div>
   </div>
 
   <RouterView v-slot="{ Component }">

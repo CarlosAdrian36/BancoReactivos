@@ -1,7 +1,7 @@
 <template>
   <section class="bg-gray-100">
     <div
-      class="mx-auto grid max-w-6xl grid-cols-1 gap-6 p-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1"
+      class="mx-auto grid max-w-6xl grid-cols-1 gap-3 p-3 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1"
     >
       <!--Bancos-->
       <BancoCard v-for="banco in bancos" :key="banco.bancoId" :banco="banco" />

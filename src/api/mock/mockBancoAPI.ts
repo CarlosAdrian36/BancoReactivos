@@ -1,11 +1,4 @@
-// src/api/mockBancoAPI.ts
-
-export interface BancoReactivo {
-  bancoId: number;
-  titulo: string;
-  descripcion: string;
-  esCompartido: boolean;
-}
+import type { BancoReactivo } from '@/Banco/interface/banco.interface';
 
 // Simulación de respuesta de API
 const bancosMock: BancoReactivo[] = [
