@@ -69,6 +69,6 @@ export const fetchBancos = (): Promise<BancoReactivo[]> => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(bancosMock);
-    }, 500); // 500ms de retraso para simular red
+    }, 12000); // 500ms de retraso para simular red
   });
 };

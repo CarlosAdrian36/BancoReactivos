@@ -23,14 +23,14 @@ const {
 </script>
 
 <template>
-  <div class="pt-26 max-w-4xl mx-auto flex items-center justify-between">
-    <!-- Título ocupa todo el espacio disponible -->
-    <h1 class="flex-1 text-2xl font-bold text-center text-gray-800 mb-6">Lista de Bancos</h1>
+  <div class="pt-26 max-w-4xl mx-auto">
+    <div class="flex justify-between items-center">
+      <!-- Título centrado horizontalmente dentro de su contenedor -->
+      <h1 class="text-center flex-1 text-xl font-bold">Lista de banco</h1>
 
-    <!-- Botón pegado a la derecha -->
-    <div class="pr-6">
+      <!-- Botón alineado a la derecha -->
       <router-link
-        v-if="$route.name !== 'crear'"
+        v-if="$route.name != 'crear'"
         to="/banco/crear"
         class="border border-blue-600 text-blue-600 bg-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition shadow inline-block"
       >
