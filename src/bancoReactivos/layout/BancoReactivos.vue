@@ -5,6 +5,8 @@ import TopMenu from '../components/TopMenu.vue';
 
 <template>
   <TopMenu />
-  <RouterView />
+  <div class="pt-19 not-first-of-type:min-h-[calc(100vh-64px-56px)]">
+    <RouterView />
+  </div>
   <FooterCustom />
 </template>

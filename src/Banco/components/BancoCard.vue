@@ -1,10 +1,10 @@
 <template>
-  <div class="w-full max-w-4xl mx-auto mb-6">
+  <div class="mb-4">
     <div
-      class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300"
+      class="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-300"
     >
       <!-- Barra superior con botones -->
-      <div class="flex justify-between items-center px-5 pt-4">
+      <div class="flex justify-between items-center px-4 pt-4">
         <h2 class="text-xl font-semibold text-gray-900 truncate max-w-[80%]">
           {{ banco.titulo }}
         </h2>
@@ -45,7 +45,7 @@
       </div>
 
       <!-- Contenido -->
-      <div class="px-5 pb-5 pt-2">
+      <div class="px-4 pb-5 pt-2">
         <p class="text-sm text-gray-600">
           {{ banco.descripcion }}
         </p>

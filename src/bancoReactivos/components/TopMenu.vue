@@ -1,10 +1,6 @@
-<script setup lang="ts">
-import { RouterLink } from 'vue-router';
-</script>
-
 <template>
-  <nav class="w-full border-b border-gray-200 bg-white py-2.5 px-6 sm:px-4 fixed top-0 left-0 z-20">
-    <div class="container mx-auto flex max-w-6xl flex-wrap items-center justify-evenly">
+  <nav class="w-full border-b border-gray-200 bg-white py-2 px-6 sm:px-4 fixed top-0 left-0">
+    <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-evenly">
       <!-- Logo -->
       <a href="#" class="flex items-center gap-2">
         <svg
@@ -25,13 +21,12 @@ import { RouterLink } from 'vue-router';
 
       <!-- Botón y avatar -->
       <div class="mt-2 sm:mt-0 sm:flex md:order-2 items-center gap-4">
-        <!-- Menú con avatar -->
         <div class="relative group">
-          <img
-            src="https://i.pravatar.cc/40?img=3"
-            alt="avatar"
-            class="w-10 h-10 rounded-full cursor-pointer ring-2 ring-gray-300"
-          />
+          <div
+            class="w-10 h-10 rounded-full cursor-pointer ring-2 ring-gray-300 flex items-center justify-center"
+          >
+            <i class="fa-light fa-user-bounty-hunter"></i>
+          </div>
           <div
             class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
           >
@@ -47,11 +42,8 @@ import { RouterLink } from 'vue-router';
       </div>
 
       <!-- Menú lateral original -->
-      <div
-        class="hid w-full items-center justify-between md:order-1 md:flex md:w-auto"
-        id="navbar-sticky"
-      >
-        <ul
+      <div class="">
+        <!-- <ul
           class="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:text-sm md:font-medium"
         >
           <li>
@@ -63,8 +55,34 @@ import { RouterLink } from 'vue-router';
           <li>
             <RouterLink to="/eliminar">Eliminados</RouterLink>
           </li>
-        </ul>
+        </ul> -->
+
+        <div class="w-full">
+          <nav class="flex space-x-2 p-2 rounded-t-lg">
+            <RouterLink to="/banco" :class="linkClasses('/banco')"> Bancos </RouterLink>
+            <RouterLink to="/compartidos" :class="linkClasses('/compartidos/compartido')">
+              Compartidos
+            </RouterLink>
+            <RouterLink to="/eliminar" :class="linkClasses('/eliminar')"> Eliminados </RouterLink>
+          </nav>
+        </div>
       </div>
     </div>
   </nav>
 </template>
+
+<script lang="ts" setup>
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+
+function linkClasses(path: string) {
+  const isActive = route.path === path;
+  return [
+    'px-4 py-2 rounded-t-md transition-all duration-300',
+    isActive
+      ? 'text-blue-600 font-semibold border-b-2 border-blue-600 bg-white'
+      : 'text-gray-600 hover:text-blue-600 hover:bg-white',
+  ];
+}
+</script>
