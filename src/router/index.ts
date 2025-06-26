@@ -55,6 +55,11 @@ const router = createRouter({
           name: 'default',
           redirect: '/banco',
         },
+        {
+          path: '/banco/:id',
+          name: 'banco-detalle',
+          component: () => import('@/bancoReactivos/views/Detalles/DetalleBanco.vue'),
+        },
       ],
     },
   ],

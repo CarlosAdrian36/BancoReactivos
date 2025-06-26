@@ -1,7 +1,7 @@
 <template>
   <div class="mb-4">
     <div
-      class="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-300"
+      class="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-300 cursor-pointer"
     >
       <!-- Barra superior con botones -->
       <div class="flex justify-between items-center px-4 pt-4">
