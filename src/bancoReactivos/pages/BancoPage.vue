@@ -13,7 +13,7 @@ function volverALaLista() {
 }
 
 const {
-  data: bancos = [],
+  data: bancos,
   isLoading,
   // isError,
 } = useQuery({
