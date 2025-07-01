@@ -12,13 +12,9 @@ function volverALaLista() {
   router.push('/banco');
 }
 
-const {
-  data: bancos,
-  isLoading,
-  // isError,
-} = useQuery({
+const { data: bancos, isLoading } = useQuery({
   queryKey: ['bancos'],
-  queryFn: fetchBancos,
+  queryFn: () => fetchBancos(),
 });
 </script>
 

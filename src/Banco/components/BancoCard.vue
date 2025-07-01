@@ -12,6 +12,7 @@
         <div class="flex gap-3">
           <!-- Eliminar -->
           <button
+            @click.stop=""
             class="text-gray-500 hover:text-red-600 transition cursor-pointer"
             title="Eliminar"
           >
@@ -20,6 +21,7 @@
 
           <!-- Editar -->
           <button
+            @click.stop=""
             class="text-gray-500 hover:text-yellow-400 transition cursor-pointer"
             title="Editar"
           >
@@ -28,6 +30,7 @@
 
           <!-- Copiar -->
           <button
+            @click.stop=""
             class="text-gray-500 hover:text-blue-600 transition cursor-pointer"
             title="Copiar"
           >
@@ -36,6 +39,7 @@
 
           <!-- Compartir -->
           <button
+            @click.stop=""
             class="text-gray-500 hover:text-green-600 transition cursor-pointer"
             title="Compartir"
           >
